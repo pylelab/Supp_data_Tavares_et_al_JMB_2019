@@ -1,0 +1,26 @@
+Command line options used in this work (described in Methods section):
+
+To choose the covariation statistic:
+
+$ R-scape --RAFSp alignment.sto
+$ R-scape --GTp alignment.sto
+
+To choose the E-value threshold:
+
+$ R-scape -E <x> alignment.sto
+
+To analyze input alignment in sliding windows:
+
+$ R-scape --window <x> --slide <x> alignment.sto 
+
+To select a random subset of the input alignment:
+
+$ R-scape --submsa <x> alignment.sto
+
+To control the mean pairwise identity of aligned sequences:
+ 
+$ R-scape --i <x> alignment.sto  
+
+To save the actual used alignment into a new file (<f>), coupled with the options above:
+ 
+$ R-scape --outmsa <f> alignment.sto  
